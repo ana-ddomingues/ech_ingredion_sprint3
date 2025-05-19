@@ -6,51 +6,84 @@
 
 <br>
 
-# Nome do projeto
+# 🌾Validação do Modelo de IA com Dados Reais
+
+## Nome do projeto
+Fase 7 - Enterprise Challenge - Sprint 3 - Ingredion
 
 ## Nome do grupo
+Grupo 34
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- [Ana Beatriz Duarte Domingues](https://www.linkedin.com/in/)
+- [Junior Rodrigues da Silva](https://www.linkedin.com/in/jrsilva051/)
+- [Carlos Emilio Castillo Estrada](https://www.linkedin.com/in/)
 
 ## 👩‍🏫 Professores:
-### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+### Tutor(a)
+- [Lucas Gomes Moreira](https://www.linkedin.com/company/inova-fusca)
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- [André Godoi Chiovato](https://www.linkedin.com/company/inova-fusca)
 
-
-## 📜 Descrição
-
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
-
+---
 
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
 - <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
 
 - <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto.
 
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+## 📜 Descrição
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+Este repositório reúne a entrega da Sprint 3 do Challenge Ingredion, etapa final do projeto, focada na **validação do modelo de previsão de produtividade agrícola** desenvolvido anteriormente. O objetivo foi verificar se as previsões baseadas em **NDVI (Índice de Vegetação por Diferença Normalizada)** se correlacionam com **dados reais de produtividade agrícola** obtidos de fontes públicas.
 
-## 🔧 Como executar o código
+  
+## 🔍 Metodologia
+### 🔸 Coleta de Dados
+- NDVI: Obtido a partir do modelo preditivo treinado na Sprint 2.
+- Produtividade Real: Dados históricos coletados de fontes públicas, especialmente do IBGE (Instituto Brasileiro de Geografia e Estatística).
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+### 🔸 Tratamento dos Dados
+- Junção dos datasets com base em município e ano-safra.
+- Cálculo do NDVI médio por localidade.
+- Correção de inconsistências e remoção de outliers.
 
+---
+
+## 📈 Análises Estatísticas Aplicadas
+### 🔸 Correlação
+- Correlação de Pearson: para verificar relação linear entre NDVI e produtividade.
+- Correlação de Spearman: para detectar relações monotônicas (não lineares).
+
+### 🔸 Regressão Linear
+- Ajuste de uma regressão linear simples para modelar a produtividade real em função do NDVI médio.
+- Cálculo do R² (coeficiente de determinação).
+
+### 🔸 Visualizações
+- Gráficos de dispersão (scatter plots) com linha de tendência.
+- Gráficos comparativos por região e por safra.
+
+--- 
+
+
+## 🧠 Principais Resultados
+- Correlações moderadas a fortes entre NDVI e produtividade, dependendo da região analisada.
+- O modelo mostrou bom desempenho, mas com variações explicadas por fatores externos como clima e qualidade das imagens NDVI.
+- R² significativo, sugerindo que o NDVI pode ser um bom preditor em contextos controlados.
+
+---
+
+## 📌 Conclusões e Limitações
+- O modelo de IA teve bom desempenho em prever produtividade a partir do NDVI.
+- A análise estatística reforçou o uso de sensoriamento remoto como ferramenta de apoio à agricultura de precisão.
+- Fatores como eventos climáticos, pragas e amostragem limitada ainda impactam a confiabilidade do modelo.
+
+---
 
 ## 🗃 Histórico de lançamentos
 
