@@ -32,8 +32,9 @@ Grupo 34
 
 Este repositório reúne a entrega da Sprint 3 do Challenge Ingredion, etapa final do projeto, focada na **validação do modelo de previsão de produtividade agrícola** desenvolvido anteriormente. O objetivo foi verificar se as previsões baseadas em **NDVI (Índice de Vegetação por Diferença Normalizada)** se correlacionam com **dados reais de produtividade agrícola** obtidos de fontes públicas.
 
-* [Clique aqui para acessar o Relatório Técnico completo (PDF)](./assets/RelatorioTécnico_Sprint3.pdf)
-* [Clique aqui para visualizar o notebook com as análises estatísticas](./Enterprise_Challenge_Sprint3_Ingredion.ipynb)
+[Clique aqui para acessar o Relatório Técnico completo (PDF)](./assets/RelatorioTécnico_Sprint3.pdf)
+
+[Clique aqui para visualizar o notebook com as análises estatísticas](./Enterprise_Challenge_Sprint3_Ingredion.ipynb)
 
 
 ---
